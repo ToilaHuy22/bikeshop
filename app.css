@@ -419,6 +419,8 @@ header.shrink {
 	display: flex;
 	align-items: center;
 }
+
+/* special section */
 .special-section {
 	position: relative;
 	margin-bottom: 290px;
@@ -463,4 +465,43 @@ header.shrink {
 	position: absolute;
 	left: 7rem;
 	bottom: -290px;
+}
+
+/* news bikes section */
+.news-card {
+	padding: 20px;
+}
+
+.news-card-img {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+}
+
+.img-wrapper,
+.img-wrapper .img {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+}
+
+.img-wrapper .img {
+	background-position: center;
+	background-size: cover;
+	transition: transform 1s ease 0s;
+}
+
+.news-card:hover .img {
+	transform: scale(1.1);
+}
+
+.news-card-img,
+.news-title,
+.news-preview {
+	margin-bottom: 20px;
+}
+
+.news-title {
+	font-size: 2rem;
+	color: var(--txt-white);
 }
